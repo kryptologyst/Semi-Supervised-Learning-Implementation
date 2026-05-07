@@ -1,0 +1,21 @@
+# @package data
+_target_: src.data.cifar10.CIFAR10DataModule
+
+# Dataset configuration
+dataset_name: "CIFAR10"
+data_dir: "data/raw"
+download: true
+
+# Data splits
+train_split: 0.8
+val_split: 0.1
+test_split: 0.1
+
+# Data loading
+batch_size: 32
+num_workers: 4
+pin_memory: true
+
+# Data augmentation
+augment: true
+augmentation_strength: "medium"

@@ -1,0 +1,8 @@
+# @package model
+_target_: src.models.simple_cnn.SimpleCNN
+
+# Model architecture parameters
+input_channels: 3
+num_classes: 10
+hidden_dim: 128
+dropout: 0.2

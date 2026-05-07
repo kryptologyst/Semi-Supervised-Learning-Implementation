@@ -1,0 +1,8 @@
+# @package ssl_method
+_target_: src.models.ssl_methods.PseudoLabeling
+
+# Pseudo-labeling specific parameters
+confidence_threshold: 0.95
+rampup_epochs: 10
+rampup_type: "sigmoid"
+ema_decay: 0.999
